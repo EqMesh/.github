@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	<title>50x</title>
+	<link href="https://cdn.eqmesh.com/dist/css/tabler.css" rel="stylesheet" />
+<style>
+.tilt-all{
+  position: relative;
+  padding: 22px 26px; /* ✅ spacing between border and content */
+  transform: perspective(1200px) rotateZ(-1.6deg) translateY(10px);
+  transform-origin: 50% 35%;
+  will-change: transform;
+}
+
+.tilt-all::before{
+  content:"";
+  position:absolute;
+  inset: 0;                 /* background matches padded box */
+  border-radius: 14px;
+  background: rgba(255,255,255,.92);
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 35px 110px rgba(0,0,0,.35);
+  z-index: -1;
+}
+
+/* optional: crisper rotated text */
+.tilt-all, .tilt-all *{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+</style>
+</head>
+<body class="border-top-wide border-primary">
+	<div class="page page-center">
+		<div class="container-tight py-4">
+      <div class="tilt-all"><div class="col-12">
+				<div class="empty-header" style="background-image: url('https://cdn.eqmesh.com/static/eqmesh/logo-75-tr.png');background-repeat: no-repeat;background-position: right;">500</div>
+				<p class="empty-title">Oops… You just found an error page</p>
+				<p class="empty-subtitle text-secondary">
+                        <div class="alert-description">We are sorry but our server encountered an internal error<br>the hamsters are spinning hard to sort this out ...</div>
+                      </div>
+                    </div></p>
+		 	<center><div class="empty-action">
+		 		<a href="/." class="btn btn-success btn-4">
+		 			Try again
+				</a>
+				<a href="/?do=logout" class="btn btn-info btn-4">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						aria-hidden="true"
+						focusable="false"
+						class="icon icon-2">
+						<path d="M5 12l14 0" />
+						<path d="M5 12l6 6" />
+						<path d="M5 12l6 -6" />
+					</svg>
+					Logout
+				</a>
+&nbsp; | &nbsp; 
+		 		<a href="https://status.eqmesh.com/" target="_blank" class="btn btn-info btn-4">
+		 			Status
+				</a>
+
+			</div></center>
+		</div></div>
+	</div>
+</body></html>
