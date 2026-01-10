@@ -1,4 +1,4 @@
-this Github Organisation hold serval ropros for production and testing to be used by the EqMesh Project.
+this Github Organisation hold serval repros for production and testing to be used by the EqMesh Project.
 
 such as:
 - sourcecode for the [public website](https://www.eqmesh.com) 
